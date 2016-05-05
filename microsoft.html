@@ -1,0 +1,225 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Codebees</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" rel="stylesheet" href="js/jQuery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="js/bootstrap.min.js">
+  <link rel="icon" href="images/fav.png">
+      <script type="text/javascript">
+   $(document).ready(function(){
+           $('.collapse').on('shown.bs.collapse', function(){
+           $(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+             }).on('hidden.bs.collapse', function(){
+          $(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+        });
+           });
+  </script>
+</head>
+<body>
+<div class="container">
+         <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span><img src="images/codebees.png" style="width: 100px; margin-top: -10px;"></span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="text-align:left;">
+                <ul class="nav navbar-nav" id="navbar">
+                    <li>
+                        <a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbspAbout</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog" aria-hidden="true"></i>&nbspServices
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                              <li><a href="services.html"><i class="fa fa-mobile"></i>&nbspdevelopment</a></li>
+                              <li class="divider"></li>
+                              <li><a href="mdevelop.html"><i class="fa fa-android"></i>&nbspandroid development</a></li>
+                              <li class="divider"></li>
+                              <li><a href="ios.html"><i class="fa fa-apple"></i>&nbspios development</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html"><i class="fa fa-user" aria-hidden="true"></i>&nbspContactUs</a>
+                    </li>
+                </ul>
+
+                    
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>&nbspSign Up</a></li>
+                        <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbspLogin</a></li>
+                   </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+</div>
+
+
+
+   <div class="row" style="margin:0px; margin-top:70px;">
+    <div class="col-md-3 col-xs-6 col-sm-4">
+      <div class="panel panel-primary">
+         <div class="panel-heading"><i class="fa fa-cog fa-spin fa-1x fa-fw margin-bottom"></i>&nbspSERVICES</div>
+        <ul class="nav nav-stacked" id="accordion1">
+            <li class="panel" id="toggle"> <a data-toggle="collapse" data-parent="#accordion1" href="#demo"><span style="float:right" class="glyphicon glyphicon-minus"></span><strong>Development</strong></a>
+
+                <ul id="demo" class="collapse in">
+                    <li><a href="microsoft.html" data-toogle="tab"><i class="fa fa-windows"></i>&nbspMicrosoft Technologies</a></li>
+                    <li class="divider"></li>
+                    <li><a href="sysint.html" data-toogle="tab"><i class="fa fa-desktop"></i>&nbspSystem Integration</a></li>
+                    <li class="divider"></li>
+                    <li><a href="support.html" data-toogle="tab"><i class="fa fa-life-ring"></i>&nbspMaintainence And Support</a></li>
+                    <li class="divider"></li>
+                    <li><a href="creative.html" data-toogle="tab"><i class="fa fa-css3"></i>&nbspCreative&UX</a></li>
+                </ul>
+            </li>
+
+            <li class="panel" id="toggle"> <a data-toggle="collapse" data-parent="#accordion1" href="#demo2"><span style="float:right" class="glyphicon glyphicon-minus"></span><strong>Mobile Development</strong></a>
+
+                <ul id="demo2" class="collapse">
+                    <li><a href="ios.html" data-toogle="tab"><i class="fa fa-apple"></i>&nbspIOS</a></li>
+                    <li class="divider"></li>
+                    <li><a href="android.html" data-toogle="tab"><i class="fa fa-android"></i>&nbspAndroid</a></li>
+                </ul>
+            </li>
+
+        </ul>
+
+      </div>
+    </div>
+    <div class="col-md-9 col-xs-6 col-sm-8">
+        <div class="tab-content ">
+            <div class="tab-pane active" id="1">
+               <h2>Microsoft</h2>
+               <p>Microsoft Technology Centers (MTCs) provide everything you need technology experts, industry leaders, and an outstanding environment to envision, plan, build, deploy, operate, and optimize a secure, customized solution, based on Microsoft and partner technologies. An MTCâ€™s dynamic collection of resources shortens your development time by removing traditional barriers, and reduces the total cost of solution acquisition. Drawing on the integrated innovation of Microsoft products and technologies, the MTC can be a powerful resource for your organization.</p>
+               <span class="col-md-4 col-sm-8" style="float:right;"><img src="images/microsoft.png" class="img-responsive" style="opacity:1.0; margin-top: 10px; margin-bottom:10px;"></span>
+              <br>
+              <p>We have 10+ years of lucrative experience in development of various domains like Telecom Management, Logistics, HealthCare, Inventory management, Bio-metric devices, Finance, Human Resource, etc.</p>
+              <div class="table table-responcive table-bordered">
+                <table class="table">
+                <thead class="thead-default" style="background-color:#F9F9F9;">
+                 <tr>
+                  <th>Categories</th>
+                  <th>Description</th>
+                 </tr>
+                 </thead>
+                 <tbody>
+                 <tr>
+                   <td>Framework</td>
+                   <td>.NET 4.0 (WPF, WCF, WWF, WCS),.NET 3.0, .NET 2.0, .NET 1.1,1.0,</td>
+                 </tr>  
+                 <tr>
+                   <td>Enterprise Server</td>
+                   <td>Exchange Server 2007, Sharepoint Server (2003 and 2007)</td>
+                 </tr>  
+                   <td>Database Technology</td>
+                   <td>SQL Server 2008 (Reporting Services, Analysis Services, SSIS, SSAS), SQL Server 2005, SQL Server 2000 (DTS), MySQL</td>
+                 </tr> 
+                 <tr>
+                   <td>Web Development</td>
+                   <td>ASP.NET, Silverlight, ASP.NET AJAX Extension/ ASP.NET Ajax Control Toolkit, Atlas, Sharepoint Portal, DotNetNuke, Web Services, ASP, Architectures (MVC, MVP, N–Tier), XAML, CSS, XHTML, HTML5, XML, XSD, XPath, JavaScript, VB Script, JQuery and JSON</td>
+                 </tr>
+                 <tr>
+                   <td>Windows Development</td>
+                   <td>MDI Applications, Windows Services, Windows schedulers etc.</td>
+                 </tr>
+                 <tr>
+                   <td>Languages</td>
+                   <td>C#, VB.NET, VC++</td>
+                 </tr>
+                 <tr>
+                   <td>Software Factories</td>
+                   <td>Application Block, Guidance Automation Toolkit, Microsoft Patterns and Practices</td>
+                 </tr>
+                 <tr>
+                   <td>IDE, Tools and Testing Tools</td>
+                   <td>Visual Studio 2010,2008,2005, Visual Studio Team System, Nunit, NMock</td>
+                 </tr>
+                 <tr>
+                   <td>Version Control</td>
+                   <td>VSS, SVN, CVS</td>
+                 </tr>
+                 <tr>
+                   <td>API Integration</td>
+                   <td>Google Adwords, MSN AdCenter, Paypal Integration, Facebook API, Twitter API</td>
+                 </tr>
+                 <tr>
+                   <td>Third Party</td>
+                   <td>   Infragistics, Telerik, Nitobi, Winnovative HTML 2 PDF Converters, ASP PDF Libraries, Tall Components, Day Pilot Calendar Tool, Helicon Rewirte URL, Investintech.com PDF2XML, NCache Server, Wowza Media Server, SWF Tools, FCK Editor, MCE Editor, Bizrate Code, Fusion Charts, Fusion Maps, Zing Chart</td>
+                 </tr>
+                 </tbody>
+                </table>
+              </div>
+              <h4>Quick Facts</h4>
+            <ul>
+              <li>Early adoption of all new Microsoft technologies right from beta phase </li>
+              <li>Currently more than 60% of our engineering workforce is focused on Microsoft technologies</li>
+              <li>Codebees provides a framework as well as a set of tools and technologies for team members to advance their knowledge, expertise, competency development and education</li>
+            </ul>
+
+              <h4>.NET Frameworks</h4>
+              <span class="col-md-4 col-sm-8" style="float:right;"><img src="images/_net.png" class="img-responsive" style="opacity:1.0; margin-top: 10px; margin-bottom:10px;"></span>
+              <p>The .NET framework created by Microsoft is a software development platform focused on rapid application development, platform independence and network transparency. .NET is Microsoft's strategic initiative for server and desktop development for the next decade. .NET includes many technologies that are designed to facilitate rapid development of internet and intranet applications.</p>
+              <p>Codebees started working with Microsoft .NET technologies from the beta stages of .NET 2.0 and executed a number of projects in 1.0, 1.1 ,2.0, 3.0 and 4.0 .NET Frameworks.</p>
+              <h4>Web Applications</h4>
+              <p>Microsoft offers a range of tools and technologies for building, hosting and exposing applications over the Web.</p>
+              <p>ASP.NET provides a unified Web development model that includes the services necessary for you to build enterprise-class Web applications. ASP.NET is part of the .NET Framework and enables you to take full advantage of the features of the Common Language Runtime (CLR), such as type safety, inheritance, language interoperability and versioning.</p>
+              <p>Codebees has started with classic ASP applications to ASP.NET 1.0, 1.1, 2.0, 3.0 and now 4.0 the latest version of ASP.NET Frameworks.</p>
+              <p>Web application development and are using concepts like:</p>
+              <ul>
+                <li>Master pages</li>
+                <li>Web parts</li>
+                <li>Webform Routing</li>
+                <li>Output Cache extensibility</li>
+                <li>Internationalization</li>
+                <li>Internationalization</li>
+                <li>Role and membership providers</li>
+                <li>Site Management</li>
+                <li>Web.config file refactoring</li>
+                <li>Improvements on Microsoft Ajax Library</li>
+              </ul>
+              <h4>Web Services</h4>
+              <p>Web Services are a very general model for building applications and can be implemented for any operation system that supports communication over the Internet. Web Services use the best of component-based development and the Web.</p>
+              <p>Codebees experience in web services</p>
+              <ul>
+                <li>Our teams were early adopters of MOSS 2007 to deliver</li>
+                <li>Implement remote procedure calls</li>
+                <li>Implement WSE 1.0, 2.0, 3.0 and 4.0 extensions including WCF</li>
+                <li>Implement SOAP Extension </li>
+                <li>Created different web services to support RFID devices</li>
+                <li>Used web services on projects, where we need to set up communication over internet</li>
+              </ul>
+
+            </div>
+         </div>
+     </div>
+   </div>
+
+
+</div>
+
+
+<div class="footer">
+     <p>Codebees &copy2015 All Rights Reserved</p>  
+</div> 
+
+</body>
+</html>

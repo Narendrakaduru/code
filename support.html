@@ -1,0 +1,139 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Codebees</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" rel="stylesheet" href="js/jQuery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="js/bootstrap.min.js">
+  <link rel="icon" href="images/fav.png">
+      <script type="text/javascript">
+   $(document).ready(function(){
+           $('.collapse').on('shown.bs.collapse', function(){
+           $(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+             }).on('hidden.bs.collapse', function(){
+          $(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+        });
+           });
+  </script>
+</head>
+<body>
+<div class="container">
+         <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span><img src="images/codebees.png" style="width: 100px; margin-top: -10px;"></span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="text-align:left;">
+                <ul class="nav navbar-nav" id="navbar">
+                    <li>
+                        <a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbspAbout</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog" aria-hidden="true"></i>&nbspServices
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                              <li><a href="services.html"><i class="fa fa-mobile"></i>&nbspdevelopment</a></li>
+                              <li class="divider"></li>
+                              <li><a href="mdevelop.html"><i class="fa fa-android"></i>&nbspandroid development</a></li>
+                              <li class="divider"></li>
+                              <li><a href="ios.html"><i class="fa fa-apple"></i>&nbspios development</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html"><i class="fa fa-user" aria-hidden="true"></i>&nbspContactUs</a>
+                    </li>
+                </ul>
+
+                    
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>&nbspSign Up</a></li>
+                        <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbspLogin</a></li>
+                   </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+</div>
+
+
+
+   <div class="row" style="margin:0px; margin-top:70px;">
+    <div class="col-md-3 col-xs-6 col-sm-4">
+      <div class="panel panel-primary">
+         <div class="panel-heading"><i class="fa fa-cog fa-spin fa-1x fa-fw margin-bottom"></i>&nbspSERVICES</div>
+        <ul class="nav nav-stacked" id="accordion1">
+            <li class="panel" id="toggle"> <a data-toggle="collapse" data-parent="#accordion1" href="#demo"><span style="float:right" class="glyphicon glyphicon-minus"></span><strong>Development</strong></a>
+
+                <ul id="demo" class="collapse in">
+                    <li><a href="microsoft.html" data-toogle="tab"><i class="fa fa-windows"></i>&nbspMicrosoft Technologies</a></li>
+                    <li class="divider"></li>
+                    <li><a href="sysint.html" data-toogle="tab"><i class="fa fa-desktop"></i>&nbspSystem Integration</a></li>
+                    <li class="divider"></li>
+                    <li><a href="support.html" data-toogle="tab"><i class="fa fa-life-ring"></i>&nbspMaintainence And Support</a></li>
+                    <li class="divider"></li>
+                    <li><a href="creative.html" data-toogle="tab"><i class="fa fa-css3"></i>&nbspCreative&UX</a></li>
+                </ul>
+            </li>
+
+            <li class="panel" id="toggle"> <a data-toggle="collapse" data-parent="#accordion1" href="#demo2"><span style="float:right" class="glyphicon glyphicon-minus"></span><strong>Mobile Development</strong></a>
+
+                <ul id="demo2" class="collapse">
+                    <li><a href="ios.html" data-toogle="tab"><i class="fa fa-apple"></i>&nbspIOS</a></li>
+                    <li class="divider"></li>
+                    <li><a href="android.html" data-toogle="tab"><i class="fa fa-android"></i>&nbspAndroid</a></li>
+                </ul>
+            </li>
+
+        </ul>
+
+      </div>
+    </div>
+    <div class="col-md-9 col-xs-6 col-sm-8">
+        <div class="tab-content ">
+            <div class="tab-pane active" id="1">
+               <h2>Application Maintenance & Support</h2>
+               <p>Applications provide the backbone for many of your business intiatives. Having a partner that can maintain your existing applications allows your internal group to shift focus to strategic and forward-looking IT initiatives. After all, the maintenance of your application is about business - not just technology. The decision of how you preserve the integrity of core business applications, manage changes in infrastructure, and improve operational costs is an essential step in the application management lifecycle.<span class="col-md-4 col-sm-8" style="float:right;"><img src="images/main&sup.gif" class="img-responsive" style="opacity:1.0;"></span></p>
+              <br>
+              <p>Codebees, working with its offshore partner, has a strong knowledge base and outstanding track record in helping organizations effectively build and maintain their Webservers and their clients business applications.</p>
+              <p>Codebees offers the following Application Maintenance services:</p><br>
+              <h4>Feature Enhancements</h4>
+              <p>Implement new features to your existing application without affecting the reliability or functionality of your business logic. Easy adaptability to changing business demands is a high value to pass on to your end users.</p>
+              <h4>Bug Fixes</h4>
+              <p>Keeping the vitality and success of an application and resolving known issues helps provide confidence in your organization’s core business initiatives.</p>
+              <h4>Quality Assurance Testing</h4>
+              <p>Quality assurance is crucial to delivering high-quality and highly usable applications. Codebees offers functional, regression and performance testing of applications to determine if it meets requirements and a level of acceptance before general availability.</p>
+              <h4>Management of Source Code</h4>
+              <p>Manage the platform-specific applications and their source code, placing them under version control in order to track modifications related to new fixes or enhancements.</p>
+              <h4>Platform Ports</h4>
+              <p>Porting an application from one platform to another may be necessary to accommodate the ever-changing technology and architectural standards. Facilitating platform ports may involve adapting code to work on complex target platforms.</p>
+            </div>
+        </div>
+        </div>
+        </div>
+
+</div>
+
+
+<div class="footer">
+     <p>Codebees &copy2015 All Rights Reserved</p>  
+</div> 
+
+</body>
+</html>

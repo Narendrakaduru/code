@@ -1,0 +1,141 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Codebees</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" rel="stylesheet" href="js/jQuery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="js/bootstrap.min.js">
+  <link rel="icon" href="images/fav.png">
+      <script type="text/javascript">
+   $(document).ready(function(){
+           $('.collapse').on('shown.bs.collapse', function(){
+           $(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+             }).on('hidden.bs.collapse', function(){
+          $(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+        });
+           });
+  </script>
+</head>
+<body>
+<div class="container">
+         <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span><img src="images/codebees.png" style="width: 100px; margin-top: -10px;"></span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="text-align:left;">
+                <ul class="nav navbar-nav" id="navbar">
+                    <li>
+                        <a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbspAbout</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog" aria-hidden="true"></i>&nbspServices
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                              <li><a href="services.html"><i class="fa fa-mobile"></i>&nbspdevelopment</a></li>
+                              <li class="divider"></li>
+                              <li><a href="mdevelop.html"><i class="fa fa-android"></i>&nbspandroid development</a></li>
+                              <li class="divider"></li>
+                              <li><a href="ios.html"><i class="fa fa-apple"></i>&nbspios development</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html"><i class="fa fa-user" aria-hidden="true"></i>&nbspContactUs</a>
+                    </li>
+                </ul>
+
+                    
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>&nbspSign Up</a></li>
+                        <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbspLogin</a></li>
+                   </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+</div>
+
+
+
+   <div class="row" style="margin:0px; margin-top:70px;">
+    <div class="col-md-3 col-xs-6 col-sm-4">
+      <div class="panel panel-primary">
+         <div class="panel-heading"><i class="fa fa-cog fa-spin fa-1x fa-fw margin-bottom"></i>&nbspSERVICES</div>
+        <ul class="nav nav-stacked" id="accordion1">
+            <li class="panel" id="toggle"> <a data-toggle="collapse" data-parent="#accordion1" href="#demo"><span style="float:right" class="glyphicon glyphicon-minus"></span><strong>Development</strong></a>
+
+                <ul id="demo" class="collapse in">
+                    <li><a href="microsoft.html" data-toogle="tab"><i class="fa fa-windows"></i>&nbspMicrosoft Technologies</a></li>
+                    <li class="divider"></li>
+                    <li><a href="sysint.html" data-toogle="tab"><i class="fa fa-desktop"></i>&nbspSystem Integration</a></li>
+                    <li class="divider"></li>
+                    <li><a href="support.html" data-toogle="tab"><i class="fa fa-life-ring"></i>&nbspMaintainence And Support</a></li>
+                    <li class="divider"></li>
+                    <li><a href="creative.html" data-toogle="tab"><i class="fa fa-css3"></i>&nbspCreative&UX</a></li>
+                </ul>
+            </li>
+
+            <li class="panel" id="toggle"> <a data-toggle="collapse" data-parent="#accordion1" href="#demo2"><span style="float:right" class="glyphicon glyphicon-minus"></span><strong>Mobile Development</strong></a>
+
+                <ul id="demo2" class="collapse">
+                    <li><a href="ios.html" data-toogle="tab"><i class="fa fa-apple"></i>&nbspIOS</a></li>
+                    <li class="divider"></li>
+                    <li><a href="android.html" data-toogle="tab"><i class="fa fa-android"></i>&nbspAndroid</a></li>
+                </ul>
+            </li>
+
+        </ul>
+
+      </div>
+    </div>
+    <div class="col-md-9 col-xs-6 col-sm-8">
+        <div class="tab-content ">
+            <div class="tab-pane active" id="1">
+               <h2>Creative & UX</h2>
+               <p>Codebees design and determination of the user experience process is constructed around 4 key areas:<span class="col-md-4 col-sm-8" style="float:right;"><img src="images/creative.gif" class="img-responsive" style="opacity:1.0;"></span></p>
+               <ul>
+                 <li>Information Architecture</li>
+                 <li>Usability</li>
+                 <li>Interaction Design</li>
+                 <li>Visual Design</li>
+               </ul>
+              <br>
+              <h4>Information Architecture</h4>
+              <p>Good usability is predicated on how the information is constructed and architected. Codebees works closely with the client to understand the priority of different information that needs to be presented to the user and determines the most appropriate way to structure that content. Information hierarchies and taxonomies are created that streamline the structure of content, how it's organised and how users access it.</p>
+              <h4>Usability</h4>
+              <p>Intuitive usability is what Codebees strive for in every project. Codebees creates interfaces that work simply, stunningly and intuitively. The principals of simple to use, efficient function, easy to remember processes and fun ensure that users feel in harmony with the interfaces that Codebees creates for clients.</p>
+              <h4>Interaction Design</h4>
+              <p>From round table meetings to white boards, wireframes and detailed plans – defining how users behave with a website or application is of paramount importance. Determining what information to provide users with and when, controlling the user journey and ensuring users get fulfillment at appropriate stages in the process enables websites and applications to achieve their goals.</p>
+              <h4>Visual Design</h4>
+              <p>Pixel perfect design is all about detail, thinking through every aspect of a website or application and asking – how can I make this better? Codebees designers focus on innovation, quality and meticulous attention to detail. Codebees spends longer on the final 25% of the design process than the previous 75%. Codebees designers are passionate, creative, genuine visionaries who can create visual environments to fit any strategy.</p>
+            </div>
+        </div>
+        </div>
+        </div>
+
+</div>
+
+
+<div class="footer">
+     <p>Codebees &copy2015 All Rights Reserved</p>  
+</div> 
+
+</body>
+</html>
